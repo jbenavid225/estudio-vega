@@ -80,7 +80,12 @@ export default function Home() {
     subtitle: "Lo que dicen nuestros clientes",
   };
 
-  if (loading) return <div className="p-6">Cargando...</div>;
+  if (loading) {
+  return (
+    <div className="min-h-screen bg-white animate-pulse" />
+  );
+}
+
   if (error) return <div className="p-6 text-red-600">{String(error)}</div>;
 
   return (
