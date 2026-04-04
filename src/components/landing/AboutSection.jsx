@@ -33,16 +33,13 @@ export default function AboutSection({ content }) {
             className="relative"
           >
             <div className="relative aspect-[4/5] rounded-2xl overflow-hidden">
-              <img
-                src={
-                  content?.image_url ||
-                  "https://images.unsplash.com/photo-1521791055366-0d553872125f?w=800&q=80"
-                }
-                alt={content?.image_alt || "Equipo legal"}
-                className="w-full h-full object-cover"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#1e3a5f]/35 to-transparent" />
-            </div>
+  <img
+  src="/about.jpg"
+  alt="Equipo legal"
+  className="w-full h-full object-cover"
+/>
+  <div className="absolute inset-0 bg-gradient-to-t from-[#1e3a5f]/35 to-transparent" />
+</div>
 
             {/* Floating Card */}
             <motion.div
